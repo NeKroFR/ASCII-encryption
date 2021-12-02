@@ -11,7 +11,6 @@ def encode (msg, key):
 
 msg = str(input('message: '))
 key = str(input('key: ')).replace(" ", "")
-print(key)
 encoded = encode(msg, key)
 print(encoded)
 file = open("encrypted.txt", "w").write(encoded)
