@@ -10,7 +10,8 @@ def encode (msg, key):
     return encoded
 
 msg = str(input('message: '))
-key = str(input('key: '))
+key = str(input('key: ')).replace(" ", "")
+print(key)
 encoded = encode(msg, key)
 print(encoded)
 file = open("encrypted.txt", "w").write(encoded)
